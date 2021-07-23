@@ -15,6 +15,7 @@ const scrollReveal = ScrollReveal({
 
 scrollReveal.reveal(
   `.menu-container,
+
 .header-text,
 .egg-image,
 .text1,

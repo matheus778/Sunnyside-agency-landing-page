@@ -1,6 +1,8 @@
 /* header / menu */
 #header {
   background-color: var(--header-color);
+  position: relative;
+  z-index: 999;
 }
 
 #header .container .menu-container {
@@ -10,7 +12,6 @@
   grid-auto-flow: column;
   justify-content: space-between;
   align-items: center;
-  position: relative;
 }
 
 .menu li {
@@ -25,12 +26,13 @@
 
 /* menu hamburger */
 #header .container .menu.show {
+  background-color: white;
   margin: inherit;
   width: 90%;
-  background-color: var(--white);
   opacity: 1;
   visibility: visible;
-  position: absolute;
+  position: fixed;
+  z-index: 99;
   top: 80px;
   right: 10px;
   display: flex;
@@ -99,11 +101,13 @@ section.header-banner {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: -2;
 }
 
 .header-text {
   margin-top: 2rem;
-  display: inherit;
+  display: flex;
   align-items: inherit;
   flex-direction: column;
   justify-content: inherit;
