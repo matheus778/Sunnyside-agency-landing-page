@@ -45,18 +45,27 @@
   display: initial;
 }
 
-#header .container .menu.show li {
+#header .container .menu.show li,
+#header .container .menu li {
   list-style: none;
 }
 
-#header .container .menu.show li a {
+#header .container .menu.show li a,
+#header .container .menu li a {
   text-decoration: none;
   font-size: 1.5rem;
   font-family: 'Barlow';
   color: var(--very-dark-blue);
+  transition: 0.3s;
 }
 
-#header .container .menu.show li:last-child a {
+#header .container .menu.show li a:hover,
+#header .container .menu li a:hover {
+  opacity: 0.6;
+}
+
+#header .container .menu.show li:last-child a,
+#header .container .menu li:last-child a {
   border-radius: 10px;
   padding: 1rem;
   background-color: var(--yellow);
@@ -110,7 +119,7 @@ section.header-banner {
 /* imagem ovo */
 .egg-image {
   width: 100%;
-  height: 50%;
+  height: 50vh;
 
   background-position: center;
   background-size: cover;
@@ -153,7 +162,7 @@ section.header-banner {
 /* imagem da taça */
 .taca-image {
   width: 100%;
-  height: 100%;
+  height: 50vh;
   background-image: url('../images/mobile/image-stand-out.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -162,7 +171,7 @@ section.header-banner {
 
 .maca-image {
   width: 100%;
-  height: 80%;
+  height: 80vh;
   background-image: url('../images/mobile/image-graphic-design.jpg');
   display: flex;
   align-items: flex-end;
@@ -187,7 +196,7 @@ section.header-banner {
 /* imagem da laranja */
 .laranja-image {
   width: 100%;
-  height: 80%;
+  height: 80vh;
   background-image: url('../images/mobile/image-photography.jpg');
   display: flex;
   align-items: flex-end;
@@ -203,7 +212,7 @@ section.header-banner {
 
 /* depoimentos */
 
-#clientes-depoimentos .container h2 {
+#clientes-depoimentos h2 {
   margin-top: 5rem;
   margin-bottom: 5rem;
   font-size: 1.5rem;
@@ -332,6 +341,20 @@ footer {
   font-weight: 600;
   color: #2c7566;
   font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.footer-content ul li a:hover {
+  opacity: 0.7;
+}
+
+.social img {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social img:hover {
+  opacity: 0.7;
 }
 
 .footer-content .social {
@@ -341,4 +364,17 @@ footer {
 
 .footer-content .social img {
   width: 1.5rem;
+}
+
+.attribution {
+  margin-top: 2rem;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  color: #2c7566;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.attribution a {
+  color: var(--very-dark);
 }
