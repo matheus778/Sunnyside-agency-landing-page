@@ -1,0 +1,47 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* varíaveis */
+:root {
+  /* primarias */
+  --header-color: #3ebfff;
+  --soft-red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --dark: hsl(167, 40%, 24%);
+  --dark-blue: hsl(198, 62%, 26%);
+  --dark-moderate: hsla(168, 34%, 41%, 0.666);
+
+  /* neutras */
+  --very-dark: hsl(212, 27%, 19%);
+  --very-dark-blue: hsl(213, 9%, 39%);
+  --dark-grayish-blue: hsl(232, 10%, 55%);
+  --grayish-blue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  height: 100vh;
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: 'Barlow', sans-serif;
+}
+
+h2 {
+  font-family: 'Fraunces', serif;
+}
+
+.section {
+  width: 100%;
+}
+
+.container {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
